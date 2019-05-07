@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- title tag -->
         <title>Save Pineapple Pizza</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- W3 CSS -->
+        <!-- character encoding -->
+        <meta charset="utf-8">
+        <!-- description -->
+        <meta name="description" content="Pineapple pizza has been getting a lot of hate. This should not be the case as it tastes delicious and is perfect. The balance of flavor is amazing as there is sweetness, saltiness and spiciness.">
+        <!-- make mobile-friendly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- w3.css -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Google fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
 
     <body>
@@ -16,41 +24,81 @@
         <div class="w3-top">
           <div class="w3-row w3-padding w3-theme">
             <div class="w3-col s3">
-              <a href="#reviews" class="w3-button w3-block w3-theme">REVIEWS</a>
+              <a href="#reviews" class="w3-button w3-block w3-theme w3-bar-item">REVIEWS</a>
             </div>
             <div class="w3-col s3">
-              <a href="#recipe" class="w3-button w3-block w3-theme">RECIPE</a>
+              <a href="#recipe" class="w3-button w3-block w3-theme w3-hide-small w3-bar-item">RECIPE</a>
             </div>
             <div class="w3-col s3">
-              <a href="#survey" class="w3-button w3-block w3-theme">SURVEY</a>
+              <a href="#survey" class="w3-button w3-block w3-theme w3-hide-small w3-bar-item">SURVEY</a>
             </div>
             <div class="w3-col s3">
-              <a href="#about" class="w3-button w3-block w3-theme">ABOUT CREATOR</a>
+              <a href="#about" class="w3-button w3-block w3-theme w3-hide-small w3-bar-item">ABOUT CREATOR</a>
             </div>
+              <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
           </div>
         </div>
+        
+        <div id="demo" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
+          <a href="#recipe" class="w3-bar-item w3-button">RECIPE</a>
+          <a href="#survey" class="w3-bar-item w3-button">SURVEY</a>
+          <a href="#about" class="w3-bar-item w3-button">ABOUT CREATOR</a>
+        </div
         
          <!-- Add a background color and large text to the whole page -->
         <div class="w3-sand w3-grayscale w3-large">
         
-        <!-- Slideshow container -->
+        <!-- slideshow header -->
         <header>
+
+            <!-- Slideshow container -->
             <div class="slideshow-container">
+
                 <div class="mySlides fade">
                     <img src="img/header.jpg" style="width:100%; height: auto;">
-                    <span class="w3-tag w3-theme">The Beauty of Pineapple on Pizza</span>
+                    <div class="text" style="color:white;">The Beauty of Hawaiian Pizza</div>
                 </div>
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="img/header1.jpg" style="width:100%; height: auto;">
+                    <div class="text">The Rings of Pinapple Invite You</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/header2.jpg" style="width:100%; height: auto;">
+                    <div class="text">Pineapple Belongs on Pizza</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-pizza-slice"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fas fa-pizza-slice"></i></a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
         </header>
 
         <!-- Reviews -->
         <div class="w3-container" id="reviews">
-          <div class="w3-content" style="max-width:1920px">
-            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Reviews of Pineapple Pizza</span></h5>
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I have a pineapple. I have a pizza. And I stand behind this delicious Southwestern Ontario creation. <a href="https://twitter.com/hashtag/TeamPineapple?src=hash&amp;ref_src=twsrc%5Etfw">#TeamPineapple</a> <a href="https://twitter.com/Canada?ref_src=twsrc%5Etfw">@Canada</a></p>&mdash; Justin Trudeau (@JustinTrudeau) <a href="https://twitter.com/JustinTrudeau/status/835225645932216324?ref_src=twsrc%5Etfw">February 24, 2017</a></blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="w3-content row" style="max-width:1920px;">
+              <h4 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Reviews of Pineapple Pizza</span></h4>
+              <div class="col-6" style="max-width:960px; float:left;">
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I have a pineapple. I have a pizza. And I stand behind this delicious Southwestern Ontario creation. <a href="https://twitter.com/hashtag/TeamPineapple?src=hash&amp;ref_src=twsrc%5Etfw">#TeamPineapple</a> <a href="https://twitter.com/Canada?ref_src=twsrc%5Etfw">@Canada</a></p>&mdash; Justin Trudeau (@JustinTrudeau) <a href="https://twitter.com/JustinTrudeau/status/835225645932216324?ref_src=twsrc%5Etfw">February 24, 2017</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It&#39;s savoury, it&#39;s sweet – Canadian invention <a href="https://twitter.com/hashtag/pineappleonpizza?src=hash&amp;ref_src=twsrc%5Etfw">#pineappleonpizza</a> can&#39;t be beat 🍍+ 🍕= 😊 <a href="https://t.co/GDHRZU0rXQ">pic.twitter.com/GDHRZU0rXQ</a></p>&mdash; Canada (@Canada) <a href="https://twitter.com/Canada/status/834515476193632258?ref_src=twsrc%5Etfw">February 22, 2017</a></blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It&#39;s savoury, it&#39;s sweet – Canadian invention <a href="https://twitter.com/hashtag/pineappleonpizza?src=hash&amp;ref_src=twsrc%5Etfw">#pineappleonpizza</a> can&#39;t be beat 🍍+ 🍕= 😊 <a href="https://t.co/GDHRZU0rXQ">pic.twitter.com/GDHRZU0rXQ</a></p>&mdash; Canada (@Canada) <a href="https://twitter.com/Canada/status/834515476193632258?ref_src=twsrc%5Etfw">February 22, 2017</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <div class="col-6" style="max-width:960; float:right;">
+                  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Pizza perfection <a href="https://twitter.com/hashtag/pizza?src=hash&amp;ref_src=twsrc%5Etfw">#pizza</a> <a href="https://twitter.com/hashtag/pineapplepizza?src=hash&amp;ref_src=twsrc%5Etfw">#pineapplepizza</a> <a href="https://t.co/cWUraiE1JY">https://t.co/cWUraiE1JY</a> <a href="https://t.co/sVSJjhxbiq">pic.twitter.com/sVSJjhxbiq</a></p>&mdash; Jason Weisberger (@jlw) <a href="https://twitter.com/jlw/status/1120895110798028801?ref_src=twsrc%5Etfw">April 24, 2019</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
           </div>
         </div>
 
@@ -58,11 +106,12 @@
         <div class="w3-container" id="recipe">
           <div class="w3-content" style="max-width:1920px">
 
-            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">The Recipe</span></h5>
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">The Recipe</span></h4>
 
             <h5>Ingredients</h5>
             <ul>
-                <li>1 (13.8 ounce) package refrigerated pizza crust dough6 strips turkey bacon or lean deli ham slices</li>
+                <li>1 (13.8 ounce) package refrigerated pizza crust dough</li>
+                <li>6 strips turkey bacon or lean deli ham slices</li>
                 <li>1 cup Contadina® Pizza Sauce or Pizza Squeeze</li>
                 <li>1 1/2 cups shredded mozzarella cheese</li>
                 <li>1 (20 ounce) can Del Monte® Pineapple Chunks in 100% Juice, well drained</li>
@@ -72,7 +121,7 @@
             </ul>
 
               <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Full Recipe</button>
+            <button class=" w3-theme" id="myBtn">Full Recipe</button>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -83,7 +132,8 @@
                 <img src="img/modal.jpg" style="width:100%; height:auto;">
                 <h5>Ingredients</h5>
                 <ul>
-                    <li>1 (13.8 ounce) package refrigerated pizza crust dough6 strips turkey bacon or lean deli ham slices</li>
+                    <li>1 (13.8 ounce) package refrigerated pizza crust dough</li>
+                    <li>6 strips turkey bacon or lean deli ham slices</li>
                     <li>1 cup Contadina® Pizza Sauce or Pizza Squeeze</li>
                     <li>1 1/2 cups shredded mozzarella cheese</li>
                     <li>1 (20 ounce) can Del Monte® Pineapple Chunks in 100% Juice, well drained</li>
@@ -125,20 +175,48 @@
             </div>
 
         <!-- Survey Container -->
-        <div class="w3-container" id="where" style="padding-bottom:32px;" id="survey">
+        <div class="w3-container" style="padding-bottom:32px;" id="survey">
           <div class="w3-content" style="max-width:1920px">
-            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Survey</span></h5>
-                <form action="/action_page.php" target="_blank">
-                <p>Do you like pineapple on pizza?</p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Yes or no" required name="Boolean"></p>
-                <p>Why or why not?</p>
-                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Reason" required name="Reason"></p>
-                <p><button class="w3-button w3-theme" type="submit">Submit</button></p>
-            </form>
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Survey</span></h4>
+              <form action="form.php" method="post">
+                Do you like pineapple on pizza? 
+                Yes <input type="radio" name="pineapple" value="Yes">
+                No <input type="radio" name="pineapple" value="No"><br>
+                Why or why not? <textarea name="reason" placeholder="Why or why not?"></textarea>
+                <input type="submit" class=" w3-theme" value="Submit">
+                </form>
           </div>
         </div>
-
-        <!-- End page content -->
+              
+        <!-- About Creater -->
+        <div class="w3-container" id="about">
+              <div class="row w3-content" style="max-width:1920px">
+                  <h4 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About the Creator of Pineapple Pizza</span></h4>
+                <div class="col-8" style="max-width:1280px; float:left;">
+                    <details>
+                        <summary>
+                            <p>Sotirios "Sam" Panopoulos (Greek: Σωτήριος Πανόπουλος; 20 August 1934 – 8 June 2017) was a Greek-born Canadian cook and businessman, credited as the inventor of Hawaiian pizza.</p>
+                            <p>Sotirios Panopoulos was born in Vourvoura, Greece, on 20 August 1934. He emigrated to Canada in 1954, aged 20, arriving in Halifax, Nova Scotia.</p>
+                        </summary>
+                        <p>Panopoulos settled in Sudbury, and then Elliot Lake, Ontario, where he found work in the mines. After sampling pizza in Naples, Panopoulos first tried pizza in North America when he visited Windsor, Ontario. With his brothers Elias and Nikitas, Panopoulos owned the Satellite Restaurant in Chatham, Ontario. They offered typical American items such as burgers and fries and American Chinese dishes, some of which mix sweet and savoury flavours. In the early 1960s Panopoulos started offering pizzas, recently popular in the US. In 1962 he had the idea to add canned pineapple to pizza. This innovation (sometimes disputed) became popular with his customers, yet over time has also earned the disdain of pizza puritans. In February 2017, when Iceland's President Guðni Th. Jóhannesson said that pineapple should be banned from pizza, Canadian Prime Minister Justin Trudeau tweeted: "I have a pineapple. I have a pizza. And I stand behind this delicious Southwestern Ontario creation."</p>
+                        <p>Panopoulos and his wife Christina were married for 50 years. They had a son, a daughter, and several grandchildren. Panopoulos sold the Satellite Restaurant in 1980, and lived in London, Ontario for the rest of his life; he worked as a restaurateur there as well. He died unexpectedly at University Hospital in London, Ontario on 8 June 2017.</p>
+                        
+                        <h6>More about Sam Panopoulos</h6>
+                        <ul>
+                            <li><a href="https://canada.greekreporter.com/2019/02/11/sam-panopoulos-the-greek-inventor-of-hawaiian-pizza/" target="_blank">Canada Greek Reporter</a></li>
+                            <li><a href="https://www.washingtonpost.com/local/obituaries/sam-panopoulos-whose-hawaiian-pizza-became-a-canadian-treasure-dies-at-83/2017/06/12/463d3612-4f74-11e7-91eb-9611861a988f_story.html?noredirect=on&utm_term=.b736b653aef8" target="_blank">Washington Post</a></li>
+                            <li><a href="https://www.pappaspost.com/one-year-later-remembering-hawaiian-pizza-inventor-sam-panopoulos-2/" target="_blank">Pappas Post</a></li>
+                            <li><a href="http://time.com/4814056/hawaiian-pizza-pineapple-sam-panopoulos-death/" target="_blank">Time</a></li>
+                            <li><a href="https://www.eater.com/2017/6/10/15776150/hawaiian-pineapple-pizza-sam-panopoulos" target="_blank">Eater</a></li>
+                            <li><a href="https://www.theguardian.com/lifeandstyle/2017/jun/10/sam-panapoulos-inventor-of-hawaiian-pizza-dies-aged-83" target="_blank">The Guardian</a></li>
+                            <li><a href="https://www.abc.net.au/news/2017-06-10/hawaiian-pizza-investor-sam-panopoulos-dies/8607108" target="_blank">ABC</a></li>
+                        </ul>
+                    </details> 
+                </div>
+                <div class="col-4" style="max-width:640px; float:right;">
+                    <img src="img/creator.jpg" style=" width:100%; height:auto;">
+                </div>   
+            </div>
         </div>
 
         <!-- Footer -->
@@ -148,5 +226,7 @@
 
         <!-- JavaScript -->
         <script src="js/modal.js"></script>
+        <script src="js/slideshow.js"></script>
+        <script src="js/nav.js"></script>
     </body>
 </html>

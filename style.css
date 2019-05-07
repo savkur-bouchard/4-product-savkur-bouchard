@@ -2,6 +2,7 @@
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
+  margin: 2%;
 }
 
 /* slideshow */
@@ -14,6 +15,81 @@ body, html {
     margin: auto;
 }
 
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #black;
+    font-family: "Inconsolata", sans-serif;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: bolder;
+    font-variant-caps: small-caps;
+}
+
 h5 {
     font-size: 30px;
     font-weight: bold;
@@ -22,6 +98,33 @@ h5 {
 h6 {
     font-size: 24px;
     font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+div {
+  column-gap: 10px;
 }
 
 /* The Modal (background) */
@@ -106,14 +209,14 @@ h6 {
   animation-duration: 0.4s
 }
 
-button {
-    border: none;
-    color: grey;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+input, textarea {
+    outline: none;
+    border: 1px #ecb636;
+}
+
+textarea {
+    max-width: 1280px;
+    max-height: 300px;
 }
 
 /* Color Theme */
