@@ -35,16 +35,16 @@
             <div class="w3-col s3">
               <a href="#about" class="w3-button w3-block w3-theme w3-hide-small w3-bar-item">ABOUT CREATOR</a>
             </div>
-              <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+              <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large w3-hide-medium" onclick="myFunction()"><i class="fas fa-bars"></i></a>
           </div>
         </div>
         
         <div id="demo" class="w3-top w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="myFunction()"><i class="fas fa-bars"></i></a>
           <a href="#reviews" class="w3-bar-item w3-button w3-block">REVIEWS</a>
           <a href="#recipe" class="w3-bar-item w3-button w3-block">RECIPE</a>
           <a href="#survey" class="w3-bar-item w3-button w3-block">SURVEY</a>
           <a href="#about" class="w3-bar-item w3-button w3-block">ABOUT CREATOR</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="myFunction()"><i class="fas fa-bars"></i></a>
         </div
             
         <!-- Add a background color and large text to the whole page -->
@@ -177,16 +177,11 @@
             </div>
 
         <!-- Survey Container -->
-        <div class="w3-container" style="padding-bottom:32px;" id="survey">
+        <div class="w3-container" id="survey">
           <div class="w3-content" style="max-width:1920px">
-            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"><i class="fas fa-poll"></i>Survey<i class="fas fa-poll"></i></span></h4>
-              <form action="form.php" method="post">
-                Do you like pineapple on pizza? 
-                Yes <input type="radio" name="pineapple" value="Yes">
-                No <input type="radio" name="pineapple" value="No"><br>
-                Why or why not? <textarea name="reason" placeholder="Why or why not?"></textarea>
-                <input type="submit" class=" w3-theme" value="Submit">
-                </form>
+            <h4 class="w3-center w3-padding-64"><span class="w3-tag w3-wide"><i class="fas fa-chart-pie"></i>Survey<i class="fas fa-chart-pie"></i></span></h4>
+              <p>This link will redirect you to a Google Form. Please answer the questions honestly. We want to know your opinion on pinapple pizza and the reasoning behind you views.</p>
+              <a href="https://forms.gle/pD3f9P9esyejdYuE6" target="_blank">Click here</a>
           </div>
         </div>
               
@@ -221,6 +216,15 @@
                 </div>   
             </div>
         </div>
+        
+        <!-- Audio -->
+        <figure class="w3-display-bottommiddle">
+            <audio style="width: 25vw; height: 2.5vw;" controls src="img/pineapplepizzasong.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+             <figcaption class="w3-center">Pineapple Pizza - Dan Lollar</figcaption>
+        </figure>
 
         <!-- Footer -->
         <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
